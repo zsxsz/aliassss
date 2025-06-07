@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Alias Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    
+    <div class="container">
+        <div class="app-wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-envelope-circle-check"></i>
+                </div>
+                <h1>Email Alias Generator</h1>
+                <p class="subtitle">Generate professional email aliases with our domains</p>
+            </header>
+
+            <div class="form-container glass-effect">
+                <div class="input-group">
+                    <div class="input-wrapper">
+                        <i class="fas fa-at input-icon"></i>
+                        <input type="text" id="aliasInput" placeholder="Enter your alias name">
+                    </div>
+                    <div class="select-wrapper">
+                        <i class="fas fa-globe input-icon"></i>
+                        <select id="domainSelect">
+                            <option value="pythia.biz.id">pythia.biz.id</option>
+                            <option value="rheaai.biz.id">rheaai.biz.id</option>
+                            <option value="kupra.biz.id">kupra.biz.id</option>
+                            <option value="keira.web.id">keira.web.id</option>
+                            <option value="xyla.biz.id">xyla.biz.id</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="generateBtn" class="generate-btn">
+                    <i class="fas fa-wand-magic-sparkles"></i> Generate Alias
+                </button>
+            </div>
+
+            <div class="result-container hidden glass-effect">
+                <div class="result-box">
+                    <h3>Your Email Alias</h3>
+                    <p id="aliasResult"></p>
+                    <button id="copyBtn" class="copy-btn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card glass-effect">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Secure</h3>
+                    <p>Protected email forwarding</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast</h3>
+                    <p>Instant alias generation</p>
+                </div>
+                <div class="feature-card glass-effect">
+                    <i class="fas fa-code"></i>
+                    <h3>Professional</h3>
+                    <p>Tech-focused domains</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
